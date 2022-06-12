@@ -15,6 +15,8 @@
     <!-- навбар -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid ">
+            <img src="free-icon-global-education-3379905.png" alt="" width="25" height="24"
+                class="d-inline-block align-text-top">
             <a class="navbar-brand " href="#">Ассистент поступления</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,6 +151,15 @@
                 <input class="form-control" type="text" id="mathinput" placeholder="100"
                     aria-label="readonly input example">
             </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-5 mb-3" style="display:none" id="infoblock">
+                <label for="infoinput" class="col-md-5">Введите кол-во баллов по предмету
+                    "Информатика"</label>
+                <input class="form-control" type="text" id="infoinput" placeholder="100"
+                    aria-label="readonly input example">
+            </div>
         </div>
         <div class="row">
             <div class="col-md-5 mb-3">
@@ -178,19 +189,25 @@
         </div>
         <div class="row">
             <div class="col-md-5 mb-3">
-                <button class="btn btn-light btn-lg btn-block" type="submit">Узнать результат</button>
+                <button class="btn btn-light btn-lg btn-block" onclick="Check(this)" type="submit">Узнать
+                    результат</button>
             </div>
         </div>
     </div>
     </div>
     </div>
     <script src="script.js"></script>
+    <script type="module" src="api.js"></script>
+
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
