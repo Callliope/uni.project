@@ -2,3 +2,7 @@ body{
     width:auto;
     background-color: #EFF8ED;
 }
+
+.row-block.inactive {
+    display: none;
+}
